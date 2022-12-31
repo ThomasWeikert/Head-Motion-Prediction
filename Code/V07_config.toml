@@ -1,0 +1,91 @@
+# Model Index Defintion
+# 1) LSTM quat models
+# 2) LSTM euler models
+# 3) LSTM position models
+# 4) GRU models
+# 5) 
+
+
+##################################################################
+# General
+##################################################################
+
+n_steps = 30
+LAT_in_rows = 5 #6*16,66ms 
+
+
+# Quat
+quat_coords = ['qw', 'qx', 'qy', 'qz']
+quat_coords_pred = ['qw_pred', 'qx_pred', 'qy_pred', 'qz_pred']
+quat_coords_true = ['qw_true', 'qx_true', 'qy_true', 'qz_true']
+
+n_in_seq_quat = 4
+n_out_seq_quat = 4 
+n_features_quat = 4
+
+# Euler
+euler_coords = ['pitch', 'roll', 'yaw']
+euler_coords_pred = ['pitch_pred', 'roll_pred', 'yaw_pred']
+euler_coords_true = ['pitch_true', 'roll_true', 'yaw_true']
+
+n_in_seq_euler = 3
+n_out_seq_euler = 3 
+n_features_euler = 3
+
+# Position
+pos_coords = ['x', 'y', 'z']
+pos_coords_pred = ['x_pred', 'y_pred', 'z_pred']
+pos_coords_true = ['x_true', 'y_true', 'z_true']
+
+n_in_seq_pos = 3
+n_out_seq_pos = 3 
+n_features_pos = 3
+
+# Quat + Gaze
+n_in_seq_quat_gaze = 6
+n_out_seq_quat_gaze = 4 
+
+# Pos + Gaze
+n_in_seq_pos_gaze = 5
+n_out_seq_pos_gaze = 3
+
+
+##################################################################
+# 6) GRU quat models  
+##################################################################
+
+6_model_type =  "GRU_quat" 
+
+6_1_model_ID = "7_2409_v01"
+
+
+##################################################################
+# 7) GRU pos models  
+##################################################################
+
+7_model_type =  "GRU_pos" 
+
+7_1_model_ID = "7_2409_v01" 
+
+
+##################################################################
+# 8) DESP pos model  
+##################################################################
+
+8_model_type =  "DESP" 
+
+8_1_model_ID = "8_2209_v01"
+
+##################################################################
+# Directories
+##################################################################
+
+Path_dataset01 = "C:/Users/Thomas Weikert/Documents/Thesis/Project_V07_24092021/Data/01_Dataset/"
+
+Path_figures_dataset01 = "C:/Users/Thomas Weikert/Documents/Thesis/Project_V07_24092021/Figures/01_Dataset/"
+
+Path_results_dataset01 = "C:/Users/Thomas Weikert/Documents/Thesis/Project_V07_24092021/Results/01_Dataset/"
+
+Path_summary_results = "C:/Users/Thomas Weikert/Documents/Thesis/Project_V07_24092021/Results/"
+
+
